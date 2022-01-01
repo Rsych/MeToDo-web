@@ -1,16 +1,18 @@
-.imageWrapper {
-	// Sets the background image in the header area
+.imageWrapper {					// Sets the background image in the header area
 	height: 714px;
-	background: linear-gradient(
-			rgba($image-overlay-color, $image-overlay-transparency),
-			rgba($image-overlay-color, $image-overlay-transparency)
-		),
+	background: 
+		linear-gradient(
+		rgba($image-overlay-color, $image-overlay-transparency), 
+		rgba($image-overlay-color, $image-overlay-transparency)
+		   ),
+		
 		url($header-image);
 
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
 	border-radius: 0px 0px 40px 40px;
+
 }
 
 .headerBackground {
@@ -19,17 +21,18 @@
 }
 
 @media only screen and (max-width: 768px) {
+
 	.headerBackground {
 		height: 80px;
 	}
+
 }
 
 .subPageHeaderBackground {
 	background-color: #fff;
 }
 
-.container {
-	// Set up the container for the site content
+.container {					// Set up the container for the site content
 	display: grid;
 	margin: auto;
 	max-width: $content-width;
@@ -38,7 +41,7 @@
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: 115px 876px auto auto;
 	grid-column-gap: 30px;
-	grid-template-areas:
+	grid-template-areas: 
 		"h h h h h h h h h h h h"
 		"p p p p p i i i i i i i"
 		"c c c c c c c c c c c c"
@@ -51,18 +54,19 @@
 }
 
 @media only screen and (max-width: 768px) {
-	.container {
-		// Set up the container for the site content
+
+	.container {					// Set up the container for the site content
 		grid-template-rows: 80px 811px auto auto;
 	}
 }
 
 @media only screen and (max-width: 992px) {
+
 	.container {
 		grid-column-gap: 0px;
 		grid-template-columns: 1;
 		grid-template-rows: 115px auto auto auto auto;
-		grid-template-areas:
+		grid-template-areas: 
 			"h h h h h h h h h h h h"
 			"i i i i i i i i i i i i"
 			"p p p p p p p p p p p p"
@@ -73,17 +77,19 @@
 
 .page {
 	margin-top: 30px;
-	margin-bottom: 48px;
+	margin-bottom: 70px;
 	grid-column: 3/11;
 }
 
 @media only screen and (max-width: 768px) {
+
 	.page {
 		margin-top: 30px;
-		margin-bottom: 16px;
+		margin-bottom: 70px;
 		grid-column: 1/-1;
 	}
-}
+	
+} 
 
 header {
 	grid-area: h;
@@ -108,6 +114,7 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+
 	.logo {
 		height: 80px;
 		margin-right: 0px;
@@ -116,7 +123,8 @@ header {
 	.logo > p {
 		display: none;
 	}
-}
+	
+} 
 
 .headerIcon {
 	width: 50px;
@@ -126,15 +134,18 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+
 	.divider {
 		position: relative;
 		min-width: 1px;
 		max-width: 1px;
-		background-color: rgba(127, 127, 127, 0.2);
+		background-color:rgba(127, 127, 127, 0.2);
 		display: inline-block;
 		margin-left: 15px;
-	}
-}
+	}	
+	
+} 
+
 
 // Navigation Links
 .scroll {
@@ -144,6 +155,7 @@ header {
 	justify-content: flex-end;
 
 	height: 115px;
+	//margin-left: 15px;
 
 	white-space: nowrap;
 	overflow-x: auto;
@@ -153,23 +165,27 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+
 	.scroll {
 		height: 80px;
 		padding-top: 100px;
 		padding-bottom: 100px;
 		margin-top: -60px;
 		justify-content: flex-start;
-	}
-}
+	}	
+	
+} 
 
 .scroll::-webkit-scrollbar {
 	display: none;
 }
 
+
 nav > ul {
 	color: #fff;
 	display: flex;
 	list-style-type: none;
+
 }
 
 nav > ul li {
@@ -177,9 +193,11 @@ nav > ul li {
 }
 
 @media only screen and (max-width: 768px) {
+
 	nav > ul li {
 		padding-left: 20px;
 	}
+
 }
 
 nav > ul li:first-child {
@@ -203,6 +221,8 @@ nav > ul li a:active {
 	color: rgba($header-title-color, 1);
 }
 
+
+
 // Sub Page Header Styling
 .subPageHeaderBackground .logo > p {
 	color: #000;
@@ -218,24 +238,26 @@ nav > ul li a:active {
 	color: rgba(#000, 1);
 }
 
+
+
 // App Title, Price, Description and Links
+
 .appInfo {
 	grid-area: i;
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 140px;
 	align-content: flex-start;
-	margin-top: -24px;
-	margin-left: -30px;
 }
 
 @media only screen and (max-width: 992px) {
+
 	.appInfo {
-		margin-left: 0px;
 		padding-top: 50px;
 		justify-content: center;
 	}
-}
+
+} 
 
 .appIconShadow {
 	display: flex;
@@ -247,8 +269,6 @@ nav > ul li a:active {
 	height: 120px;
 	-webkit-clip-path: url(#shape120);
 	clip-path: url(#shape120);
-	margin-left: 30px;
-	margin-top: 24px;
 }
 
 .appNamePriceContainer {
@@ -258,13 +278,10 @@ nav > ul li a:active {
 	align-items: start;
 	justify-content: center;
 	margin-left: 30px;
-
-	margin-top: 24px;
 }
 
 .appName {
 	color: $app-title-color;
-	// margin-top: 24px;
 }
 
 .appPrice {
@@ -274,6 +291,7 @@ nav > ul li a:active {
 }
 
 @media only screen and (max-width: 768px) {
+
 	.appNamePriceContainer {
 		width: 100%;
 		margin-left: 0px;
@@ -285,12 +303,13 @@ nav > ul li a:active {
 		margin-top: 30px;
 		text-align: center;
 	}
-
+	
 	.appPrice {
 		margin-top: 13px;
 		text-align: center;
 	}
-}
+	
+} 
 
 .appDescriptionContainer {
 	font-size: 2.5rem;
@@ -304,36 +323,29 @@ nav > ul li a:active {
 
 .appDescription {
 	color: $app-description-color;
-	margin-left: 30px;
 }
 
 @media only screen and (max-width: 992px) {
-	.appIconLarge {
-		margin-left: 0px;
-		text-align: center;
-	}
+
 	.appDescription {
 		text-align: center;
-		margin-left: 0px;
 	}
-}
+	
+} 
 
 .downloadButtonsContainer {
 	display: inline-block;
 	margin-top: 42px;
 	filter: $drop-shadow;
-	// margin-left: 30px;
-	margin-left: 18px;
-	// margin-right: 18px;
 }
 
 @media only screen and (max-width: 992px) {
+
 	.downloadButtonsContainer {
 		text-align: center;
-		margin-left: 0px;
-		// margin-right: 20px;
 	}
-}
+	
+} 
 
 .playStore {
 	height: 75px;
@@ -341,25 +353,28 @@ nav > ul li a:active {
 }
 
 @media only screen and (max-width: 992px) {
+
 	.playStore {
 		margin-right: 24px;
 		margin-bottom: 0px;
 	}
-}
+	
+} 
 
 @media only screen and (max-width: 528px) {
+
 	.playStore {
 		margin-right: 0px;
 		margin-bottom: 24px;
 	}
-}
+	
+} 
 
 .appStore {
 	height: 75px;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 12px;
 }
+
+
 
 // iPhone Device Preview
 
@@ -379,141 +394,6 @@ nav > ul li a:active {
 	margin-top: 23px;
 }
 
-.fadeInImage {
-	-webkit-animation: fadeInAnimation 1.5s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadeInAnimation 1.5s; /* Firefox < 16 */
-	-ms-animation: fadeInAnimation 1.5s; /* Internet Explorer */
-	-o-animation: fadeInAnimation 1.5s; /* Opera < 12.1 */
-	animation: fadeInAnimation 1.5s;
-}
-
-.feature.fadeInText.noOpacity {
-	opacity: 0;
-}
-
-.feature.fadeInText.is-inViewport {
-
-	-webkit-animation-name: fadeInAnimation, slideInAnimation;
-	-moz-animation-name: fadeInAnimation, slideInAnimation;
-	-ms-animation-name: fadeInAnimation, slideInAnimation;
-	-o-animation-name: fadeInAnimation, slideInAnimation;
-	animation-name: fadeInAnimation, slideInAnimation;
-
-	-webkit-animation-duration: 1000ms;
-	-moz-animation-duration: 1000ms;
-	-ms-animation-duration: 1000ms;
-	-o-animation-duration: 1000ms;
-	animation-duration: 1000ms;
-
-	animation-fill-mode: forwards;
-}
-
-@for $i from 1 through $n {
-	.feature:nth-child(#{$i}) {
-		animation-delay: $i * 80ms;
-	}
-}
-
-@keyframes fadeInAnimation {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadeInAnimation {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadeInAnimation {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadeInAnimation {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadeInAnimation {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-// For slide
-
-@keyframes slideInAnimation {
-	from {
-		transform: translateX(-8px);
-	}
-	to {
-		transform: translateX(-0px);
-	}
-}
-
-/* Firefox < 16 */
-@-moz-keyframes slideInAnimation {
-	from {
-		transform: translateX(-8px);
-	}
-	to {
-		transform: translateX(-0px);
-	}
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes slideInAnimation {
-	from {
-		transform: translateX(-8px);
-	}
-	to {
-		transform: translateX(-0px);
-	}
-}
-
-/* Internet Explorer */
-@-ms-keyframes slideInAnimation {
-	from {
-		transform: translateX(-8px);
-	}
-	to {
-		transform: translateX(-0px);
-	}
-}
-
-/* Opera < 12.1 */
-@-o-keyframes slideInAnimation {
-	from {
-		transform: translateX(-8px);
-	}
-	to {
-		transform: translateX(-0px);
-	}
-}
-
 .videoContainer {
 	width: 349px;
 	height: 755px;
@@ -529,6 +409,7 @@ nav > ul li a:active {
 }
 
 @media only screen and (max-width: 1070px) {
+
 	.iphonePreview {
 		background-size: 370px auto;
 	}
@@ -545,14 +426,16 @@ nav > ul li a:active {
 		margin-left: 24px;
 		margin-top: 22px;
 	}
-
+	
 	.videoContainer > video {
 		width: 322px;
 		height: 698px;
 	}
-}
+	
+} 
 
 @media only screen and (max-width: 992px) {
+
 	.iphonePreview {
 		display: flex;
 		background-size: 260px auto;
@@ -582,7 +465,9 @@ nav > ul li a:active {
 		width: 226px;
 		height: 488px;
 	}
-}
+	
+} 
+
 
 // Feature List
 
@@ -595,7 +480,6 @@ nav > ul li a:active {
 	flex-grow: 1;
 	flex-wrap: wrap;
 	margin-top: 93px;
-	margin-bottom: 48px;
 }
 
 .feature {
@@ -603,18 +487,18 @@ nav > ul li a:active {
 	padding-top: 63px;
 	padding-left: 15px;
 	padding-right: 15px;
-	width: calc(100% / 3);
+	width: calc(100%/3);
 }
 
-.feature:nth-child(-n + 3) {
-	padding-top: 0px;
+.feature:nth-child(-n+3) {
+    padding-top: 0px;   
 }
 
 .feature:nth-child(3n) {
 	padding-right: 0px;
 }
 
-.feature:nth-child(3n + 1) {
+.feature:nth-child(3n+1) {
 	padding-left: 0px;
 }
 
@@ -649,6 +533,7 @@ nav > ul li a:active {
 }
 
 @media only screen and (max-width: 992px) {
+
 	.features {
 		flex-grow: 1;
 		flex-direction: row;
@@ -664,24 +549,26 @@ nav > ul li a:active {
 		width: 100%;
 	}
 
-	.feature:nth-child(-n + 3) {
-		padding-top: 41px;
+	.feature:nth-child(-n+3) {
+		padding-top: 41px;   
 	}
 
 	.feature:nth-child(1) {
-		padding-top: 0px;
+		padding-top: 0px;   
 	}
 
 	.feature:nth-child(3n) {
 		padding-right: 15px;
 	}
-
-	.feature:nth-child(3n + 1) {
+	
+	.feature:nth-child(3n+1) {
 		padding-left: 15px;
 	}
+	
 }
 
 @media only screen and (max-width: 375px) {
+
 	.features {
 		flex-grow: 1;
 		flex-direction: row;
@@ -697,22 +584,25 @@ nav > ul li a:active {
 		width: 100%;
 	}
 
-	.feature:nth-child(-n + 3) {
-		padding-top: 41px;
+	.feature:nth-child(-n+3) {
+		padding-top: 41px;   
 	}
 
 	.feature:nth-child(1) {
-		padding-top: 0px;
+		padding-top: 0px;   
 	}
 
 	.feature:nth-child(3n) {
 		padding-right: 0px;
 	}
-
-	.feature:nth-child(3n + 1) {
+	
+	.feature:nth-child(3n+1) {
 		padding-left: 0px;
 	}
-}
+	
+} 
+
+
 
 // Footer
 
@@ -720,11 +610,7 @@ footer {
 	grid-area: f;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	background-color: rgba(116, 116, 116, 0.05);
-	padding: 40px;
-	border-radius: 16px 16px 0px 0px;
-	flex-shrink: 0;
+	justify-content: center;
 }
 
 .footerText {
@@ -733,13 +619,12 @@ footer {
 	line-height: 1.5;
 	width: 100%;
 	text-align: center;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 
 .footerIcons {
-	padding-bottom: 32px;
-	grid-gap: 16px;
+	padding-bottom: 70px;
 	display: flex;
 	flex: 0 0 100%;
 	justify-content: center;
@@ -749,7 +634,6 @@ footer {
 	display: flex;
 	text-align: center;
 	padding-bottom: 70px;
-	align-self: center;
 }
 
 .footerLinks a {
@@ -760,7 +644,9 @@ footer {
 	margin-right: 0px;
 }
 
+
 @media only screen and (max-width: 768px) {
+
 	.footerLinks {
 		flex-direction: column;
 	}
@@ -773,28 +659,28 @@ footer {
 
 	.footerLinks a:first-child {
 		margin-top: 0px;
-	}
+	}	
+
 }
 
 @media only screen and (max-width: 992px) {
-	footer {
-		align-items: center;
-		flex-direction: column;
-		align-items: center;
-	}
-
+	
 	.footerText {
 		color: $footer-text-color;
 		display: block;
 		line-height: 1.5;
 		width: 100%;
 		text-align: center;
+		padding-top: 54px;
+		padding-bottom: 61px;
 	}
-
+	
 	.footerIcons {
+		padding-bottom: 70px;
 		display: flex;
 	}
-}
+	
+} 
 
 .hidden {
 	display: none;
