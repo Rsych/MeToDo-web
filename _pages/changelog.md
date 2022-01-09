@@ -11,15 +11,16 @@ Check out the timeline. We're constantly updating it.
 
 ### `Latest`
 
-## **Version 1.1**
+## **Version 1.1.2**
 New security measure updated. Now users can select app locking with device passwords or Biometrics.
 
 #### What's New
 - Biometrics and device password authentication added
+- Seperated View for better experience
 
 #### Bug Fixes
 - Improved user experience.
-- NavigationBar bug fixed.
+
 
 
 ### `Initial Release`
