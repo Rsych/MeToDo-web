@@ -68,9 +68,9 @@ features                                  :
     description                           : When you're done. Just tap it.
     fontawesome_icon_name                 : magic
 
-  - title                                 : # New Feature Title
-    description                           : # New Feature Description
-    fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
+  - title                                 : Lock it, so only you can access
+    description                           : Support for biometrics or passcode authentication
+    fontawesome_icon_name                 : lock
 
 
 
