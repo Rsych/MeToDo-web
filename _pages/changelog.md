@@ -11,16 +11,16 @@ Check out the timeline. We're constantly updating it.
 
 ### `Latest`
 
-## **Version 1.1.2**
-New security measure updated. Now users can select app locking with device passwords or Biometrics.
+## **Version 2.0.0**
+Calendar added. Now users can select a date and app will shows what users have on that date.
 
 #### What's New
-- Biometrics and device password authentication added
-- Seperated View for better experience
+- Calendar added
+- Better Dark mode
 
 #### Bug Fixes
 - Improved user experience.
-
+- Date error fixed
 
 
 ### `Initial Release`
@@ -52,6 +52,14 @@ Minor bug fixes regarding Dark Mode
 - Weird behavior when tapping Dark mode fixed
 
 <br>
+## **Version 1.1.2**
+New security measure updated. Now users can select app locking with device passwords or Biometrics.
 
+#### What's New
+- Biometrics and device password authentication added
+- Seperated View for better experience
+
+#### Bug Fixes
+- Improved user experience.
 ________
 <br>
